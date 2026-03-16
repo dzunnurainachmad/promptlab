@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PromptLab
 
-## Getting Started
+Playground interaktif untuk belajar dan bereksperimen dengan teknik prompt engineering. Tulis, uji, dan bandingkan prompt secara real-time menggunakan OpenAI API.
 
-First, run the development server:
+## Fitur
+
+- **6 Teknik Prompting** — Zero-Shot, Few-Shot, Chain-of-Thought, Role Prompting, Output Formatting, dan Temperature Comparison
+- **Streaming Response** — hasil AI muncul secara real-time dengan animated cursor
+- **Prompt Preview** — lihat prompt final yang dikirim ke API sebelum menjalankannya
+- **Temperature Comparison** — bandingkan respons pada suhu 0.0, 0.5, dan 1.0 secara side-by-side
+- **Prompt History** — riwayat prompt tersimpan di localStorage, lengkap dengan token count dan estimasi biaya
+- **Token Counter** — hitung jumlah token dan perkiraan harga setiap prompt
+- **Panduan Teknik** — penjelasan dan tips untuk setiap teknik prompting
+- **Konfigurasi API** — masukkan OpenAI API key dan pilih model langsung dari UI
+
+## Tech Stack
+
+- [Next.js 16](https://nextjs.org) — App Router + Server Actions
+- [OpenAI SDK](https://github.com/openai/openai-node) — streaming & chat completions
+- [Zustand](https://zustand-demo.pmnd.rs) — state management dengan localStorage persistence
+- [Tailwind CSS v4](https://tailwindcss.com) — dark theme dengan aksen gradient ungu-cyan
+- [react-markdown](https://github.com/remarkjs/react-markdown) — render respons markdown
+- [js-tiktoken](https://github.com/dqbd/tiktoken) — token counting
+
+## Setup
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Jalankan development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Konfigurasi API Key
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Masukkan OpenAI API key langsung di UI melalui tombol **Settings** — tersimpan otomatis di localStorage.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Atau buat `.env.local` jika ingin hardcode:
+> ```env
+> OPENAI_API_KEY=sk-...
+> ```
