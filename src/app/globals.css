@@ -1,37 +1,37 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background-primary: #0a0a12;
-  --color-background-secondary: #12121e;
-  --color-background-card: #1a1a2e;
-  --color-background-card-hover: #222240;
-  --color-background-input: #0f0f1c;
+  --color-background-primary: #1a1510;
+  --color-background-secondary: #211b14;
+  --color-background-card: #2d261e;
+  --color-background-card-hover: #3a3128;
+  --color-background-input: #1e1812;
 
   /* Components use border-border */
-  --color-border: #2a2a45;
-  --color-border-focus: #7c3aed;
+  --color-border: #3d3529;
+  --color-border-focus: #b45309;
 
-  --color-text-primary: #e8e8f0;
-  --color-text-secondary: #9898b0;
-  --color-text-muted: rgba(104, 104, 128, 0.55);
+  --color-text-primary: #e0d5c4;
+  --color-text-secondary: #a89880;
+  --color-text-muted: rgba(140, 122, 102, 0.55);
 
-  --color-accent-purple: #a78bfa;
-  --color-accent-cyan: #06b6d4;
-  --color-accent-green: #34d399;
-  --color-accent-orange: #fb923c;
-  --color-accent-pink: #f472b6;
-  --color-accent-red: #f87171;
+  --color-accent-purple: #d97706;
+  --color-accent-cyan: #b45309;
+  --color-accent-green: #92a058;
+  --color-accent-orange: #c2703a;
+  --color-accent-pink: #b87a5a;
+  --color-accent-red: #c45a5a;
 
-  --background-image-gradient-main: linear-gradient(135deg, #a78bfa, #06b6d4);
-  --background-image-gradient-warm: linear-gradient(135deg, #f472b6, #fb923c);
-  --background-image-gradient-cool: linear-gradient(135deg, #34d399, #06b6d4);
+  --background-image-gradient-main: linear-gradient(135deg, #d97706, #b45309);
+  --background-image-gradient-warm: linear-gradient(135deg, #c2703a, #d97706);
+  --background-image-gradient-cool: linear-gradient(135deg, #92a058, #b45309);
 
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-xl: 20px;
 
-  --shadow-glow: 0 0 30px rgba(167,139,250,0.15);
+  --shadow-glow: 0 0 30px rgba(217,119,6,0.15);
 }
 
 @utility glass-card {
@@ -43,7 +43,7 @@
 }
 
 @utility btn-primary {
-  @apply bg-gradient-main text-white px-6 py-3 rounded-md font-semibold transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-[0_4px_20px_rgba(167,139,250,0.3)];
+  @apply bg-gradient-main text-white px-6 py-3 rounded-md font-semibold transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-[0_4px_20px_rgba(217,119,6,0.3)];
 }
 
 @utility btn-ghost {

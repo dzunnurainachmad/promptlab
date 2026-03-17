@@ -21,8 +21,8 @@ export function Header() {
               <path d="M2 12L12 17L22 12" stroke="url(#logoGrad)" strokeWidth="2" strokeLinecap="round" />
               <defs>
                 <linearGradient id="logoGrad" x1="2" y1="2" x2="22" y2="22">
-                  <stop offset="0%" stopColor="#a78bfa" />
-                  <stop offset="100%" stopColor="#06b6d4" />
+                  <stop offset="0%" stopColor="#d97706" />
+                  <stop offset="100%" stopColor="#b45309" />
                 </linearGradient>
               </defs>
             </svg>
